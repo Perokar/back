@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="form">
+        <h1 class="form__title">Добавить статью</h1>
+
+        <label>
+          Название статьи
+          <input type="text" name="title" placeholder="Название статьи" />
+        </label>
+        <label>
+          Статья
+          <textarea
+            name="text"
+            cols="30"
+            rows="10"
+            placeholder="Статья"
+          ></textarea>
+        </label>
+        <label>
+          Картинка для статьи
+          <input type="file" name="image" id="img" accept="image/* , .gif, .jpg , .png, .web"/>
+        </label>
+        <label>
+          Дата публикации
+          <input type="date" name="date" />
+        </label>
+
+        <button type="submit">Добавить статью</button>
+      </form>
+    </div>
+      <button id="getData">Получить данные</button>
+    <script src="./form.js"></script>
+  </body>
+</html>
